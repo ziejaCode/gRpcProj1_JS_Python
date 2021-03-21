@@ -7,7 +7,7 @@ import ice_cream_pb2_grpc
 
 class IceCreamServicer(ice_cream_pb2_grpc.IceCreamServicer):
   def OrderIceCream(self, request, context):
-    print('we got something!!')
+    print('we have got something!!')
     response = ice_cream_pb2.IceCreamResponse()
     response.message = f"here is your {request.scoops} scoop {request.flavor} ice cream!"
     return response
